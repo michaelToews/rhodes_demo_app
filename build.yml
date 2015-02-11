@@ -1,0 +1,26 @@
+#sdk: "/Users/michaeltoews/.rvm/gems/ruby-1.9.3-p545/gems/rhodes-5.0.2"
+sdkversion: 5.0.0
+name: test_ios_app
+version: 1.0
+vendor: rhomobile
+build: debug
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator7.0
+  provisionprofile:
+  codesignidentity: iPhone Developer
+  entitlements: ""
+  BundleIdentifier: com.rhomobile.testiosapp
+  BundleURLScheme: testiosapp
+wp8:
+  productid: '903b9050-9449-0132-81a7-7831c1c374dc'
+android:
+  manifest_template: 'AndroidManifest.erb'
+  version: 2.3.3
+
+wm:
+  #sdk: "MC3000c50b (ARMV4I)"
+  #sdk: "Windows Mobile 6.5.3 Professional DTK (ARMV4I)"
+
+extensions: ["rhoconnect-client"]
